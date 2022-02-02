@@ -1,0 +1,168 @@
+header{
+    background: url('/headerprueba.jpg') no-repeat center;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+header h1{
+    color: white;
+    text-shadow: 2px 2px #00b9ad;
+    text-align: center;
+    font-size: 50px; 
+    padding: 5%;
+    margin: 0%;
+}
+
+main {
+    margin-left: 200px;
+}
+
+.prueba {
+    width: 300px;
+    background-color: tomato;
+    height: 100%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #e6e6e6;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;    
+}  
+nav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}   
+nav a.active {
+    background-color: #9FD5D1;
+    color: white;
+}  
+nav a:hover:not(.active) {
+    background-color: rgb(141, 141, 141);
+    color: white;
+}  
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}  
+@media screen and (max-width: 700px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    nav a {float: left;}
+    div.content {margin-left: 0;}
+    main {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav a {
+      text-align: center;
+      float: none;
+    }
+}
+
+.fraseInicial {
+    margin-top: 5%;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+.autor {
+    font-size: 25px;
+    text-align: end;
+    padding-right: 4%;
+    margin-bottom: 7%;
+}
+
+
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    font-size: 30px;
+}  
+.text {
+    color: #f2f2f2;
+    font-size: 80px;
+    padding: 22% 2%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }@-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }@keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+    
+.presentacion {
+    padding-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+.presentacion img {
+    height: 60vh;
+}
+.presentacion p{
+    font-size: 20px;
+    max-width: 60%;
+    margin-left: 2%;
+}
+
+.redesSociales iframe {
+    margin-top: 5%;
+    padding-left: 10%;  
+    float: right;
+    padding-right: 10%;
+}
+
+.redesSociales i {
+    font-size: 35px;
+    margin-left: 10%;
+    color: #9FD5D1 ;
+}
+
+.redesSociales h6 {
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: -2.5%;
+}
