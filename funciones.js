@@ -16,3 +16,14 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";  
 }
+
+//Navbar
+
+function navFuncion() {
+  var x = document.getElementById("myNav");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNav";
+  }
+}

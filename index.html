@@ -17,12 +17,16 @@
         <h1>Fabiana Mónaco Fotografía</h1>
     </header>
 
-    <nav>
+    <nav id="myNav" class="topNav">
         <a class="active" href="#home">Inicio</a>
         <a href="#galeria">Galería</a>
-        <a href="#contact">Sobre Mi</a>
-        <a href="#about">Contacto</a>
+        <a href="#about">Sobre Mi</a>
+        <a href="#contact">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="navFuncion()"><i class="fa fa-bars"></i>    
+        </a> 
     </nav>
+
+
 <main>
 
     <article id="home">
@@ -31,7 +35,7 @@
     </article>
         <div class="autor"><p>-Fulano de tal</p></div> 
 
-    <section>            
+    <section id="galeria">            
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="https://www.xtrafondos.com/descargar.php?id=5932&resolucion=1280x720" style="width:100%">
@@ -55,7 +59,7 @@
             </script>
     </section>
 
-    <article class="presentacion">
+    <article id="about" class="presentacion">
         <img src="https://i0.wp.com/www.hisour.com/wp-content/uploads/2017/10/Portrait.jpg?fit=640%2C954&ssl=1">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, ea, excepturi id ipsum explicabo distinctio minus cumque iure,
         vero laudantium sit vel suscipit ad sed perferendis necessitatibus nemo sunt. Mollitia. Lorem ipsum dolor sit, amet consectetur 
@@ -66,27 +70,15 @@
     <article class="redesSociales">
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
         <iframe src="https://snapwidget.com/embed/983642" class="snapwidget-widget" allowtransparency="true" frameborder="0"
-        scrolling="no" style="border:none; overflow:hidden; width:40%; "></iframe>
+        scrolling="no" style="border:none; overflow:hidden; width:50%; "></iframe>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <i class="fas fa-phone"></i> 
-        <h6>+54 9 11 8951 2468</h6>
-        <br> 
-        <i class="far fa-envelope"></i> 
-        <h6>blablabla@gmail.com</h6>
-        <br> 
-        <i class="fab fa-instagram"></i> 
-        <h6>@blabla1234 </h6>
+    <footer id="contact">
+        <i class="fas fa-phone"></i><h6>+54 9 11 8951 2468</h6>
+ 
+        <i class="far fa-envelope"></i> <h6>blablabla@gmail.com</h6>
+    
+        <i class="fab fa-instagram"></i><h6>@blabla1234 </h6>
+    </footer>
 
 
     </article>

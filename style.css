@@ -1,5 +1,5 @@
 header{
-    background: url('/headerprueba.jpg') no-repeat center;
+    background: url('headerprueba.jpg') no-repeat center;
     background-size: cover;
     height: 250px;
     position: relative;
@@ -13,73 +13,72 @@ header h1{
     margin: 0%;
 }
 
-main {
-    margin-left: 200px;
-}
-
-.prueba {
-    width: 300px;
-    background-color: tomato;
-    height: 100%;
-}
-
 nav {
-    margin: 0;
-    padding: 0;
-    width: 200px;
+    overflow: hidden;
     background-color: #e6e6e6;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: block;    
-}  
-nav a {
+  }
+  
+  nav a {
+    float: left;
     display: block;
-    color: black;
-    padding: 16px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-}   
-nav a.active {
+    font-size: 17px;
+    padding-left: 3%;
+    padding-right: 3%;
+
+  }
+  
+  nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  
+  nav a.active {
     background-color: #9FD5D1;
     color: white;
-}  
-nav a:hover:not(.active) {
-    background-color: rgb(141, 141, 141);
-    color: white;
-}  
-div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}  
-@media screen and (max-width: 700px) {
-    nav {
-      width: 100%;
-      height: auto;
-      position: relative;
+  }
+  
+  nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+      float: right;
+      display: block;
     }
-    nav a {float: left;}
-    div.content {margin-left: 0;}
-    main {
-        margin-left: 0px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav.responsive {position: relative;}
+    nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-}
-@media screen and (max-width: 400px) {
-    nav a {
-      text-align: center;
+    nav.responsive a {
       float: none;
+      display: block;
+      text-align: left;
     }
-}
+  }
 
 .fraseInicial {
     margin-top: 5%;
     font-size: 30px;
     font-style: italic;
     text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+
 }
 .autor {
     font-size: 25px;
-    text-align: end;
+    text-align: center;
     padding-right: 4%;
     margin-bottom: 7%;
 }
@@ -150,19 +149,22 @@ div.content {
 
 .redesSociales iframe {
     margin-top: 5%;
-    padding-left: 10%;  
-    float: right;
-    padding-right: 10%;
-}
+    margin-left: 25%;
 
-.redesSociales i {
-    font-size: 35px;
-    margin-left: 10%;
-    color: #9FD5D1 ;
 }
+footer {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00b9ad;
 
-.redesSociales h6 {
+}
+footer i{
     font-size: 30px;
-    margin-left: 15%;
-    margin-top: -2.5%;
+    padding: 5%
+}
+footer h6{
+    font-size: 20px;
+    color: black;  
 }
